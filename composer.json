@@ -1,0 +1,19 @@
+{
+    "name": "aririfani/fcm",
+    "description": "Package push notificaition using FCM",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ari Rifani",
+            "email": "ari.rifani0333@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+       "autoload": {
+        "psr-4": {
+            "Aririfani\\Fcm\\": "aririfani/fcm/src/"
+        }
+    },
+}
+ 
