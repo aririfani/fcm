@@ -1,7 +1,7 @@
 # fcm
 Simple FCM push notif for laravel
 
-Instalation
+# Instalation
 
 update autoload in composer.json
 
@@ -12,20 +12,20 @@ update autoload in composer.json
         }
     },
 
-Register the provider directly in your app configuration file config/app.php config/app.php:
+# Register the provider directly in your app configuration file config/app.php config/app.php:
 'providers' => [
     // ...
    Aririfani\Fcm\FcmServiceProvider::class,
 ]
 
-Add the facade aliases in the same file:
+# Add the facade aliases in the same file:
 'aliases' => [
     ...
   'FcmMessage' => Aririfani\Fcm\FcmFacade::class,
 
 ]
 
-Usage
+# Usage
 
 use FcmMessage;
 
