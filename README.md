@@ -3,8 +3,8 @@ Simple FCM push notif for laravel
 
 ### Instalation
 
-create directory packages/aririfani/ in app/ and copy file in this folder, update autoload in composer.json
-```
+create directory /packages/aririfani/ in your project and clone this in folder /aririfani, update autoload in composer.json
+``` 
  "autoload": {
         "classmap": [
             "database"
