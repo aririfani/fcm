@@ -24,7 +24,7 @@ FCM_SERVER_KEY=my_secret_server_key
 FCM_SENDER_ID=my_secret_sender_id
 ```
 
-### Register the provider directly in your app configuration file config/app.php config/app.php:
+### Register the provider directly in your app configuration file config/app.php:
 ```
 'providers' => [
     // ...
