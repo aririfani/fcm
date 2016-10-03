@@ -3,7 +3,7 @@ Simple FCM push notif for laravel
 
 ### Instalation
 
-update autoload in composer.json
+create directory packages/aririfani/ in app/ and copy file in this folder, update autoload in composer.json
 ```
  "autoload": {
         "classmap": [
@@ -24,7 +24,7 @@ FCM_SERVER_KEY=my_secret_server_key
 FCM_SENDER_ID=my_secret_sender_id
 ```
 
-### Register the provider directly in your app configuration file config/app.php:
+### Register the provider directory in your app configuration file config/app.php:
 ```
 'providers' => [
     // ...
