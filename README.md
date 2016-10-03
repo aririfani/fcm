@@ -1,32 +1,46 @@
 # fcm
 Simple FCM push notif for laravel
 
-# Instalation
+### Instalation
 
 update autoload in composer.json
-
-"autoload": {
+```
+ "autoload": {
+        "classmap": [
+            "database"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Aririfani\\Fcm\\": "packages/aririfani/fcm/src/"
         }
     },
+```
+### configuration
 
-# Register the provider directly in your app configuration file config/app.php config/app.php:
+In your .env file, add the server key and the secret key for the Firebase Cloud Messaging:
+
+```
+FCM_SERVER_KEY=my_secret_server_key
+FCM_SENDER_ID=my_secret_sender_id
+```
+
+### Register the provider directly in your app configuration file config/app.php config/app.php:
+```
 'providers' => [
     // ...
    Aririfani\Fcm\FcmServiceProvider::class,
 ]
-
-# Add the facade aliases in the same file:
+```
+### Add the facade aliases in the same file:
+```
 'aliases' => [
     ...
   'FcmMessage' => Aririfani\Fcm\FcmFacade::class,
 
 ]
-
-# Usage
-
+```
+### Usage
+```
 use FcmMessage;
 
 $token = $fcmUserToken;
@@ -41,5 +55,7 @@ $notification = [
         ];
 
 $data = FcmMessage::send($token,$notification,$message);
+```
+
 
 enjoy it
